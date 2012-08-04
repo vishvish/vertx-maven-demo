@@ -14,17 +14,16 @@ The point of this sample app is to show how Java and Ruby (and other languages) 
 
 	mvn clean compile
 
-This will download the vert.x dependencies for Version 1.1.0. As none of the vert.x stuff is in a central Maven repo, I've loaded the two jars into my own Nexus repo and made it openly available. Version 1.2.1 is out but I haven't tested it yet.
-
 ## Running
 
 After building
 
 	cd <projectdir>/target/classes
 	
-Assuming vertx 1.1.0 is in your path:
+Assuming vertx 1.1.0 or later is in your path and JRuby is available to vert.x (put it in the lib
+ folder or lib/jars depending on your vert.x version).
 
-	vertx run com.tfto.vertx.SampleMain
+	vert.x run com.tfto.vertx.SampleMain
 
 You should see something like:
 
@@ -41,5 +40,4 @@ Then test out the Ruby Verticle: In a terminal window
 
 And see everything you type echoed back.
 
-The whole project works fine with IntelliJ. There's also `mvn package` which will copy the jar
-dependencies into a `lib` folder.
+The whole project works fine with IntelliJ.
