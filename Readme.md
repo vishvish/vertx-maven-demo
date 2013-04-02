@@ -1,4 +1,4 @@
- vert.x Multi Language app
+vert.x Multi Language app
 
 This is a sample app that compiles with Maven, using the vert.x framework.
 
@@ -20,10 +20,9 @@ After building
 
 	cd <projectdir>/target/classes
 	
-Assuming vertx 1.1.0 or later is in your path and JRuby is available to vert.x (put it in the lib
- folder or lib/jars depending on your vert.x version).
+Assuming vertx 1.3.1 is in your path.
 
-	vert.x run com.tfto.vertx.SampleMain
+	vertx run com.tfto.vertx.SampleMain
 
 You should see something like:
 
