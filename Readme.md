@@ -7,6 +7,7 @@ There is a master verticle, SampleMain, which deploys the other three verticles:
 1. Sender - this simply dispatches an event to the address "receiver.request"
 2. Receiver - this handles any events at the address "receiver.request"
 3. Ruby Verticle - this starts an echo server on port 1234
+4. Javascript Verticle - starts a webserver on port 8080
 
 The point of this sample app is to show how Java and Ruby (and other languages) could live in one application and build with Maven.
 
@@ -33,9 +34,13 @@ You should see something like:
 
 The sender waits 2000ms before firing an event. The Receiver registers the event.
 
-Then test out the Ruby Verticle: In a terminal window
+Then test out the Ruby Verticle in a terminal window
 
 	telnet localhost 1234
+
+Then test out the Javascript Verticle in your browser
+
+    http://localhost:8080
 
 And see everything you type echoed back.
 
