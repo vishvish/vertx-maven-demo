@@ -35,6 +35,16 @@
                                     <directory>${project.basedir}/src/main/ruby</directory>
                                     <preservePath>true</preservePath>
                                 </resource>
+                                <resource>
+                                    <targetPath>${project.build.outputDirectory}</targetPath>
+                                    <directory>${project.basedir}/src/main/javascript</directory>
+                                    <preservePath>true</preservePath>
+                                </resource>
+                                <resource>
+                                    <targetPath>${project.build.outputDirectory}</targetPath>
+                                    <directory>${project.basedir}/src/main/javascript/web</directory>
+                                    <preservePath>true</preservePath>
+                                </resource>
                             </resources>
                         </configuration>
                     </execution>

@@ -8,5 +8,6 @@ public class SampleMain extends Verticle {
         container.deployVerticle("com.tfto.vertx.Receiver");
         container.deployVerticle("com.tfto.vertx.Sender");
         container.deployVerticle("ruby_verticle.rb");
+        container.deployVerticle("app.js");
     }
 }
