@@ -1,10 +1,6 @@
-load('vertx.js');
+var vertx = require('vertx.js');
 
-var webServerConf = {  
-  port: 8080,
-  host: 'localhost'
-};
+vertx.createHttpServer().requestHandler(function(req) {
+  req.response.end("<html><body><h1>Hello from vert.x!</h1></body></html>");
+}).listen(8080);
 
-// Start the web server, with the config we defined above
-
-vertx.deployModule('vertx.web-server-v1.0', webServerConf);

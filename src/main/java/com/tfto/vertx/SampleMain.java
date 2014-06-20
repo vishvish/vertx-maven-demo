@@ -1,6 +1,6 @@
 package com.tfto.vertx;
 
-import org.vertx.java.deploy.Verticle;
+import org.vertx.java.platform.Verticle;
 
 public class SampleMain extends Verticle {
 

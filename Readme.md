@@ -1,4 +1,10 @@
-vert.x Multi Language app
+# vert.x Multi Language app
+
+## Updated for vert.x 2.1
+
+Updated maven build and all code to run on latest vert.x
+
+--
 
 This is a sample app that compiles with Maven, using the vert.x framework.
 
@@ -11,6 +17,12 @@ There is a master verticle, SampleMain, which deploys the other three verticles:
 
 The point of this sample app is to show how Java and Ruby (and other languages) could live in one application and build with Maven.
 
+## OS X
+
+Install vert.x with Homebrew
+
+  brew install vert.x
+
 ## Building
 
 	mvn clean compile
@@ -21,7 +33,7 @@ After building
 
 	cd <projectdir>/target/classes
 	
-Assuming vertx 1.3.1 is in your path.
+Assuming vertx is in your path.
 
 	vertx run com.tfto.vertx.SampleMain
 
